@@ -354,7 +354,43 @@ section{
     text-align: center;
     color: var(--bg-color);
 }
+.trailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 999; /* Asegurar que el elemento esté en la capa superior */
+    backdrop-filter: blur(10px); /* Aplicar desenfoque */
+}
 
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    max-width: 90%; 
+    max-height: 90vh; 
+    outline: none;
+    position: relative; 
+    z-index: 1000; 
+}
+.close {
+    position: absolute;
+    top: 8%; 
+    right: 5%; 
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 2%; /* Ajustar el tamaño máximo en relación con el ancho de la pantalla */
+}
 /* responsive  */
 @media (max-width: 1080px){
     .home-text{
@@ -423,6 +459,12 @@ section{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(160px,auto));
     }
+    .close {
+        top: 90px; /* Cambiar la posición vertical en pantallas más pequeñas */
+        right: 15px; /* Cambiar la posición horizontal en pantallas más pequeñas */
+        max-width: 40px; /* Tamaño máximo en pantallas más pequeñas */
+        
+    }
 }
 @media (max-width: 472px){
     .newsletter form .email{
@@ -455,6 +497,8 @@ section{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
 }
+
+
 
 
 

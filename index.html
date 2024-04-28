@@ -39,7 +39,7 @@
                 <div class="home-text">
                     <span>Hajime Yatate</span>
                     <h1>Cowboy <br>Bebop</h1>
-                    <a href="https://www.youtube.com/watch?v=EL-D9LrFJd4" class="btn">Ver Opening</a>
+                    <a href="#" class="btn" onClick="toggleVideo();">Ver Trailer</a>
                     <a href="" class="play">
                         <i class='bx bx-play'></i>
                     </a>
@@ -315,6 +315,20 @@
         <div class="copyright">
             <p>Animes - Acción</p>
         </div>
+
+
+        <div class="trailer">
+            <video
+             src="trailers/v1.mp4" 
+             muted
+             controls="true" 
+             autoplay>
+            </video>
+             <img  class="close" src="images/x.png" alt="" onClick="toggleVideo();"
+             />
+        </div>
+
+
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-98Z2M5KLZ4"></script>
