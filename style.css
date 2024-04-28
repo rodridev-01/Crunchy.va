@@ -9,13 +9,21 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
 }
-/* variables  */
+/* variables*/
 :root{
     --main-color: #FF6B00;
     --text-color: #020307;
     --bg-color: #fff;
 }
-
+/*scroll*/
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
 body{
     background: var(--text-color);
     color: var(--bg-color);
@@ -100,6 +108,8 @@ header.shadow .logo{
 }
 
 /* Home  */
+/*
+Transición
 article{
     position: relative;
     width: 250px;
@@ -144,7 +154,7 @@ article:hover img:last-child{
     opacity: 1;
     transform: translateY(10%);
 }
-
+*/
 
 section{
     padding: 4.5rem 0 1.5rem;
@@ -249,6 +259,10 @@ section{
     text-align: center;
 }
 .box span{
+    display: block;
+    margin: 0 auto;
+    width: fit-content; /* Opcional: ajusta el ancho del span al contenido */
+    text-align: center;
     font-size: 14px;
 }
 
@@ -428,6 +442,7 @@ section{
     }
     .home-text h1{
         font-size: 1.7rem;
+        padding-left: 2000;
     }
     .play{
         right: 2rem;
@@ -441,8 +456,6 @@ section{
     }
 }
 
-
-/*TESTEOS*/
 
 
 
