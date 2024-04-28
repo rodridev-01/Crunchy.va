@@ -60,3 +60,9 @@ function toggleVideo(){
   video.pause();
   trailer.classList.toggle('active')
 }
+function toggleVideo2(){
+  const trailer2=document.querySelector('.trailer2');
+  const video=document.querySelector('video');
+  video.pause();
+  trailer2.classList.toggle('active')
+}
