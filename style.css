@@ -21,7 +21,7 @@ html::-webkit-scrollbar{
     background: transparent;
 }
 html::-webkit-scrollbar-thumb{
-    background: var(--main-color);
+    background: var(#004AAD);
     border-radius: 5rem;
 }
 body{
